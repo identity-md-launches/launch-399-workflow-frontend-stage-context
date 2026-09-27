@@ -1,0 +1,519 @@
+{
+  "base": "http://127.0.0.1:33417/preview/",
+  "scenarios": [
+    {
+      "name": "desktop-no-wallet",
+      "viewport": "1280x900",
+      "h1Count": 1,
+      "mainCount": 1,
+      "headings": [
+        "H1 Nosandwich (NOSAND)",
+        "H2 Wallet",
+        "H2 Pool price",
+        "H2 Buy or sell NOSAND",
+        "H2 Anti-sandwich hook",
+        "H2 Recent sells and clipped amounts",
+        "H3 Hook events",
+        "H2 Contracts and deployment"
+      ],
+      "priceText": [
+        "50,000,000 NOSAND per ETH"
+      ],
+      "checkpointBadge": "No checkpoint yet",
+      "swapButton": true,
+      "swapReason": false,
+      "walletText": "No browser wallet found. Install a wallet extension to buy or sell; reads work without one.",
+      "sellsText": "Recent sells and clipped amounts",
+      "codeBadges": [
+        "Code verified",
+        "Code verified",
+        "Code verified",
+        "Code verified",
+        "Code verified",
+        "Code verified",
+        "Code verified",
+        "Code verified"
+      ],
+      "overflow": {
+        "scrollWidth": 1280,
+        "innerWidth": 1280
+      },
+      "a11y": [
+        {
+          "tag": "a",
+          "type": null,
+          "name": "Skip to content",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "11,791,900",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "type": "button",
+          "name": "Refresh",
+          "disabled": false
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "Buy NOSAND with ETH",
+          "disabled": false
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "Sell NOSAND for ETH",
+          "disabled": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "You pay (ETH)",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "type": "button",
+          "name": "Max",
+          "disabled": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Slippage tolerance (%)",
+          "disabled": false
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "Universal Router",
+          "disabled": false
+        },
+        {
+          "tag": "input",
+          "type": "radio",
+          "name": "PoolSwapTest router",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "Buy NOSAND",
+          "disabled": true
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0xE03A…3543",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "type": "button",
+          "name": "Donate collected claims",
+          "disabled": true
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Recipient address",
+          "disabled": false
+        },
+        {
+          "tag": "input",
+          "type": "text",
+          "name": "Amount (NOSAND)",
+          "disabled": false
+        },
+        {
+          "tag": "button",
+          "type": "submit",
+          "name": "Transfer NOSAND",
+          "disabled": true
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0xa26A6De1daF41775DaeE351CF4bc10a35f7bF2b3",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "abi/NOSAND.json",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0xe0Fd49F077d0B1251215AD1E15133b15e13a00C4",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "abi/AntiSandwichHook.json",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0xE1Dd9c3fA50EDB962E442f60DfBc432e24537E4C",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0x61B3f2011A92d183C7dbaDBdA940a7555Ccf9227",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0x3A9D48AB9751398BbFa63ad67599Bb04e4BdF98b",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0x429ba70129df741B2Ca2a85BC3A2a3328e5c09b4",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "cloud.google.com",
+          "disabled": false
+        },
+        {
+          "tag": "a",
+          "type": null,
+          "name": "www.alchemy.com",
+          "disabled": false
+        }
+      ],
+      "keyboard": [
+        {
+          "tag": "a",
+          "name": "Skip to content",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "11,791,900",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "button",
+          "name": "Refresh",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "input",
+          "name": "Buy NOSAND with ETH",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "input",
+          "name": "You pay (ETH)",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "input",
+          "name": "Slippage tolerance (%)",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "input",
+          "name": "Universal Router",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0xE03A…3543",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "summary",
+          "name": "Transfer NOSAND",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0xa26A6De1daF41775DaeE351CF4bc10a35f7bF2b3",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "abi/NOSAND.json",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0xe0Fd49F077d0B1251215AD1E15133b15e13a00C4",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "abi/AntiSandwichHook.json",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0xE1Dd9c3fA50EDB962E442f60DfBc432e24537E4C",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0x61B3f2011A92d183C7dbaDBdA940a7555Ccf9227",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0x3A9D48AB9751398BbFa63ad67599Bb04e4BdF98b",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0x429ba70129df741B2Ca2a85BC3A2a3328e5c09b4",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "0x9b6b46e2c869aa39918db7f52f5557fe577b6eee",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "cloud.google.com",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        },
+        {
+          "tag": "a",
+          "name": "www.alchemy.com",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(31, 86, 214)",
+          "focusVisible": true
+        }
+      ],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "name": "mobile-320",
+      "viewport": "320x640",
+      "overflow": {
+        "scrollWidth": 320,
+        "innerWidth": 320
+      },
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "name": "mobile-390",
+      "viewport": "390x844",
+      "overflow": {
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "name": "tablet-820",
+      "viewport": "820x1000",
+      "overflow": {
+        "scrollWidth": 820,
+        "innerWidth": 820
+      },
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "name": "desktop-mock-wallet",
+      "viewport": "1280x900",
+      "steps": [
+        {
+          "afterConnect": "Connected as 0x09EC…4a60 Wrong network (chain 1)"
+        },
+        {
+          "swapDisabledOnWrongChain": true
+        },
+        {
+          "providerCalls": [
+            "eth_requestAccounts",
+            "eth_chainId",
+            "wallet_switchEthereumChain",
+            "wallet_addEthereumChain",
+            "wallet_switchEthereumChain",
+            "eth_chainId"
+          ]
+        },
+        {
+          "addChainParams": {
+            "chainId": "0xaa36a7",
+            "chainName": "Sepolia",
+            "rpcUrls": [
+              "https://ethereum-sepolia-rpc.publicnode.com",
+              "https://rpc.sepolia.ethpandaops.io",
+              "https://sepolia.rpc.sentio.xyz"
+            ],
+            "nativeCurrency": {
+              "name": "Sepolia Ether",
+              "symbol": "ETH",
+              "decimals": 18
+            },
+            "blockExplorerUrls": [
+              "https://sepolia.etherscan.io"
+            ]
+          }
+        },
+        {
+          "balanceHint": "Balance 0.923416 ETH Keep some ETH for gas."
+        },
+        {
+          "buyQuote": "Expected output49,627.08515246 NOSANDRate49,627,085 NOSAND per ETHMinimum received (1 % slippage)49,130.81430094 NOSANDEstimated swap gas191258"
+        },
+        {
+          "buyStepsUR": "✓Buy through the Universal Router · Done — Confirmed in block 11791660 View transaction 0x456395a8…5239ca"
+        },
+        {
+          "buyResultUR": "Swap confirmed. Balances and pool state are refreshing."
+        },
+        {
+          "sentTx": [
+            {
+              "to": "0x3A9D48AB9751398BbFa63ad67599Bb04e4BdF98b",
+              "value": "0x38d7ea4c68000",
+              "dataLen": 2186
+            }
+          ]
+        },
+        {
+          "buyStepsPST": "✓Buy through PoolSwapTest · Done — Confirmed in block 11791660 View transaction 0x456395a8…5239ca"
+        },
+        {
+          "buyResultPST": "Swap confirmed. Balances and pool state are refreshing."
+        },
+        {
+          "sellQuote": "The pool cannot fill this sell: there is no ETH liquidity above the current price."
+        },
+        {
+          "sellSubmit": {
+            "invalid": "true",
+            "focused": "_r_0_-amount",
+            "error": "The pool cannot fill this sell: there is no ETH liquidity above the current price."
+          }
+        },
+        {
+          "donateSteps": "✓Donate collected claims to in-range LPs · Done — Confirmed in block 11791660 View transaction 0x456395a8…5239ca"
+        },
+        {
+          "transferRejected": "✕Transfer 1 NOSAND · Failed — Request rejected in the wallet."
+        }
+      ],
+      "console": [],
+      "failedRequests": []
+    },
+    {
+      "name": "manifest-404",
+      "alert": "Unable to load imd-deployment.json: Unable to load http://127.0.0.1:33417/preview/imd-deployment.json (HTTP 404). The page cannot show pool data without it. Reload to try again."
+    }
+  ]
+}

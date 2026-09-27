@@ -1,0 +1,54 @@
+{
+  "chainId": 11155111,
+  "repoUrl": "https://github.com/identity-md-launches/launch-315-antisandwichhook",
+  "version": 1,
+  "launchId": "e628af2f-8e98-495a-8ed9-39bc5d657282",
+  "manifest": {
+    "hook": {
+      "contract": "AntiSandwichHook",
+      "permissions": [
+        "beforeSwap",
+        "afterSwap",
+        "afterSwapReturnDelta"
+      ],
+      "constructorArgs": [
+        "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543"
+      ]
+    },
+    "kind": "univ4_hook",
+    "pool": {
+      "fee": 3000,
+      "tickSpacing": 60,
+      "initialPrice": "79228162514264337593543950336000",
+      "pairedCurrency": "0x0000000000000000000000000000000000000000"
+    },
+    "notes": "Describes src/AntiSandwichHook.sol:AntiSandwichHook and src/NOSAND.sol:NOSAND, with exported interfaces in docs/abi/AntiSandwichHook.json and docs/abi/NOSAND.json. The hook takes only IPoolManager, using the approved Sepolia address above; NOSAND has no constructor arguments. The hook inherits OpenZeppelin uniswap-hooks v1.2 AntiSandwichHook on BaseDynamicAfterFee. Its three enabled permissions encode address bits 0x00c4 under mask 0x3fff; all other flags are false. BaseHook validates the address at construction and restricts callbacks to PoolManager. The native-ETH pool has currency0 ETH and currency1 NOSAND, a static 3000 fee and tick spacing 60. initialPrice is decimal sqrtPriceX96, 1000 * 2^96, representing 1,000,000 NOSAND per ETH with 18 decimals on both currencies. This price matches test/helpers/FactoryRehearsal.sol; the approved workflow supplies no numeric opening price, so it remains the accepted local rehearsal assumption, not evidence of a live factory deployment. Initialization and liquidity callbacks are disabled. The first swap of each block checkpoints the pool and is not clipped; an empty checkpoint starts at the current tick, with at most 100 tick-spacing steps copied. Later oneForZero sells are compared with a virtual constant-liquidity opening curve; zeroForOne buys are unprotected. Non-native currency0 pools receive no protection or hook delta. Positive afterSwap unspecified deltas become ERC-6909 claims; successful donations reach current in-range LPs, otherwise claims remain for permissionless donateCollected. Clipped and Donated events expose accounting. The virtual quote omits initialized tick boundaries and can differ from executable opening-pool fills, as documented in docs/DESIGN.md and test/reproductions/OpeningCurve.t.sol.txt; this remains a source requirement conflict for independent review. An unfillable checkpoint exact-output sell reverts. Donations have no LP-age restriction and permit JIT capture; dampened arbitrage can leave prices behind other markets. There is no hook admin, setter, pause, upgrade or sweep. This technical manifest does not resolve source findings or establish launch policy, artifact attestation, admission or deployment; those remain separate review and service responsibilities.",
+    "token": {
+      "name": "Nosandwich",
+      "symbol": "NOSAND",
+      "contract": "NOSAND",
+      "decimals": 18
+    }
+  },
+  "contracts": [
+    {
+      "name": "NOSAND",
+      "txHash": "0x456395a8fc937f6f06b958982aae1689511cc2dd3ea34da5c33e846a4c5239ca",
+      "abiHash": "38880b8e56d42ce900f744a7908c7139632a49f1c3f33385c64ceaed29d37bee",
+      "address": "0xa26a6de1daf41775daee351cf4bc10a35f7bf2b3",
+      "blockNumber": 11791660,
+      "creationCodeHash": "10503dde10888c8b8ebcc74bd7061d5a787e72ec96ffe9680db54c96c2d5118d"
+    },
+    {
+      "name": "AntiSandwichHook",
+      "txHash": "0x456395a8fc937f6f06b958982aae1689511cc2dd3ea34da5c33e846a4c5239ca",
+      "abiHash": "3a52b1286b4c87c2ec0382c0ba8bbbf748d770c7d93077335603300fafad595f",
+      "address": "0xe0fd49f077d0b1251215ad1e15133b15e13a00c4",
+      "blockNumber": 11791660,
+      "creationCodeHash": "fcd8ff7fab6ed633492a7affe3049889e8ce3768af279838bede11bbfe54a74d"
+    }
+  ],
+  "sourceCommit": "c284f54fd0a8f4f03053033ecb084e2ed65a6f91",
+  "abiInstructions": "Build ABIs from this exact source commit; compare canonicalKeccak(abi) with abiHash. Verify deployed code on the stated chain before enabling transactions.",
+  "attestationHash": "4ed6a40c9da4362950096dcfc290133f34bf3ad6a8a4503cad51a3ecf7201094"
+}
